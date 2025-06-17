@@ -2,10 +2,12 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
+import "./NavigationBar.css";
 
 const NavigationBar = () => {
    return (
       <nav
+         className="navigationBar"
          style={{
             backgroundColor: "#f8f9fa",
             padding: "10px 20px",
@@ -14,7 +16,15 @@ const NavigationBar = () => {
          }}
       >
          <h3>🎓 Student Registry</h3>
-         <div style={{ display: "flex", gap: "20px", alignItems: "center" }}>
+         <div
+            className="navitems"
+            style={{
+               width: "50%",
+               display: "flex",
+               justifyContent: "space-evenly",
+               alignItems: "center",
+            }}
+         >
             <Link to="/" style={{ textDecoration: "none", color: "#333" }}>
                Home
             </Link>

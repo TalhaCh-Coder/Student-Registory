@@ -1,0 +1,13 @@
+@media screen and (max-width: 425px) {
+   .navigationBar {
+      flex-direction: column;
+      padding: 10px 0 10px 0 !important;
+
+      align-items: center;
+   }
+   .navitems{
+    width: 100% !important;
+    border-top: 1px solid black;
+    padding-top:10px ;
+   }
+}
